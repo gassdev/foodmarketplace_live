@@ -1,0 +1,187 @@
+@keyframes show-toast {
+  0% {
+    bottom: -100%;
+  }
+  20% {
+    bottom: 100px;
+  }
+  80% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: -100%;
+  }
+}
+
+.show-notification {
+  position: fixed;
+  bottom: 100%;
+  right: 20px;
+  animation-name: show-toast;
+  animation-duration: 8s;
+  z-index: 99;
+}
+
+.btn {
+  padding: 2px 1.7em;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* adjust vendor profile image in home page */
+.company-logo ul li,
+.company-logo ul li.has-border {
+  width: 145px !important;
+}
+
+.main-search.fancy .field-holder input[type='text'] {
+  color: #000000 !important;
+}
+
+table > tbody > tr > td {
+  border: none !important;
+}
+
+#opening_hours select {
+  padding: 5px 10px !important;
+}
+
+.btn-success.add_hour {
+  padding: 7px 15px 7px 15px;
+}
+
+/* hide radio */
+.payment-method [type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Images styles */
+.payment-method [type='radio'] + img {
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* checked style */
+.payment-method [type='radio']:checked + img {
+  outline: 2px solid #ff0000;
+}
+
+/* Stripe */
+
+.stripe-section {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  height: 112px;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+.product {
+  display: flex;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-stripe {
+  border-radius: 4px;
+  margin: 10px;
+  width: 56px;
+  height: 56px;
+}
+.stripe-section h3,
+.stripe-section h5 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', 'Ubuntu', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: -0.154px !important;
+  color: #242d60 !important;
+}
+.stripe-section h5 {
+  opacity: 0.5 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+#checkout-button {
+  height: 36px;
+  width: 100%;
+  background: #556cd6;
+  border-radius: 0 0 4px 4px;
+  color: white;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+}
+#checkout-button:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 480px) {
+  a.get-start-btn {
+    display: block;
+    margin-top: 15px !important;
+    margin-left: 0 !important;
+  }
+  .main-search-bar {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+    background-position: left !important;
+  }
+  .user-dashboard {
+    width: 100% !important;
+  }
+  .company-logo ul {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .company-logo ul li,
+  .company-logo ul li.has-border {
+    width: 190px !important;
+  }
+
+  .text-cart {
+    width: 80px !important;
+    word-wrap: break-word;
+  }
+  .price-cart {
+    width: 250px !important;
+    margin-left: 10px !important;
+    left: 70px !important;
+    right: unset !important;
+  }
+
+  .menu-itam-holder .quantity {
+    margin-top: -30px !important;
+    right: 0 !important;
+  }
+
+  .price-checkout {
+    text-align: end !important;
+  }
+
+  .checkout {
+    width: auto !important;
+  }
+
+  .table.opening-hours {
+    width: 100% !important;
+  }
+  .table.opening-hours td {
+    padding: 0.5rem;
+  }
+}
+
+table td,
+table th {
+  line-height: 1rem !important;
+}
